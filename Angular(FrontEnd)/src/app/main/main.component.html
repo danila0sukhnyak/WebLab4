@@ -1,0 +1,19 @@
+<nav id="header" class="navbar navbar-expand-lg fixed-top ">
+  <div class="navbar container">
+    <div>
+    <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png"/>
+    <h3>{{currentUser.username}}</h3>
+    <p style="">
+      <strong>Автор</strong>: Даня Сухняк P3232
+      <strong>Вариант</strong>: 285050
+    </p>
+    </div>
+    <ul class="nav navbar-nav float-left">
+      <li ><a (click)="logOut()">LogOut</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+  <app-check-points></app-check-points>
+  <app-history></app-history>
+</div>
